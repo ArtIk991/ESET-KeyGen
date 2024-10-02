@@ -346,9 +346,7 @@ def main(disable_exit=False):
                     EK_obj.sendRequestForKey()
                     license_name, license_key, license_out_date = EK_obj.getLicenseData()
                     output_line = '\n'.join([
-                        '',
                         f'{license_key}',
-                        ''
                     ])
                     
             # ESET ProtectHub
@@ -372,16 +370,7 @@ def main(disable_exit=False):
                     license_name, license_key, license_out_date = EPHK_obj.getLicenseData()
                     if license_name is not None:
                         output_line = '\n'.join([
-                            '',
-                            '---------------------------------------------------------------------',
-                            f'ESET ProtectHub Account Email: {email_obj.email}',
-                            f'ESET ProtectHub Account Password: {eset_password}',
-                            '',
-                            f'License Name: {license_name}',
                             f'License Key: {license_key}',
-                            f'License Out Date: {license_out_date}',
-                            '---------------------------------------------------------------------',
-                            ''
                         ])
 
             # end
