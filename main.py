@@ -347,14 +347,7 @@ def main(disable_exit=False):
                     license_name, license_key, license_out_date = EK_obj.getLicenseData()
                     output_line = '\n'.join([
                         '',
-                        '-------------------------------------------------',
-                        f'Account Email: {email_obj.email}',
-                        f'Account Password: {eset_password}',
-                        '',
-                        f'License Name: {license_name}',
-                        f'License Key: {license_key}',
-                        f'License Out Date: {license_out_date}',
-                        '-------------------------------------------------',
+                        f'{license_key}',
                         ''
                     ])
                     
